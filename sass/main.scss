@@ -1,34 +1,37 @@
-html {
-  font-size: 10px;
-}
+// html {
+// }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  font-family: "Indie Flower", cursive, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
+  // line-height: 1.5;
   text-align: center;
-  color: #333;
+  color: black;
   margin: 0;
-  background-color: #8EC5FC;
-  background-image: -webkit-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  background-image: -moz-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  background-image: -o-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background: url("/img/backgroung.jpeg");
+  background-repeat: no-repeat, repeat;
+  // background-size: cover;
+  // background-color: #8ec5fc;
+  // background-image: -webkit-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  // background-image: -moz-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  // background-image: -o-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  // background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
-* {
-    transition: 3ooms all;
-}
+// * {
+//   transition: 3ooms all;
+// }
 
 h1 {
   font-size: 3.5rem;
-  margin-bottom: 0;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 @media (max-width: 460px) {
   h1 {
     font-size: 3rem;
-    line-height: 1.2;
+    line-height: 1.5;
+    font-weight: bold;
   }
 }
 h2 {
@@ -44,12 +47,12 @@ a:visited {
 a:active {
   color: black;
 }
-a:hover {
-  color: #FF3243;
-}
+/* a:hover {
+  // color: #FF3243;
+} */
 #main {
-  margin: 10px 8px;
-  padding: 15px;
+  margin: 5px 8px;
+  padding: 10px;
   border-radius: 5px;
 }
 @media (max-width: 460px) {
@@ -58,25 +61,20 @@ a:hover {
   }
 }
 img {
-  max-width: 100%;
+  max-width: 60%;
   display: block;
   height: auto;
   margin: 0 auto;
+  border-radius: 5px;
   // border: 5px solid red;
   // shape-rendering: 2px 2px;
 }
 #title:hover {
   color: dimgray;
-} 
-section li:hover {
-  background-color: rgb(141, 141, 34);
-  border-radius: 5px;
-  transition: 400ms all;
 }
-.share ul li:hover {
-  opacity: 0.6;
-  transition: 600ms all;
 
+.share ul li:hover {
+  transition: 600ms all;
 }
 #figure#img-div {
   background: white;
@@ -86,7 +84,7 @@ section li:hover {
 #img {
   display: block;
   justify-content: center;
-  border: 1px solid black ;
+  border: 1px solid black;
 }
 #img-caption {
   margin: 15px 0 5px 0;
@@ -119,7 +117,7 @@ ion-icon {
   color: black;
   font-size: 64px;
 }
-.share  ul{
+.share ul {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -127,9 +125,9 @@ ion-icon {
 .share ul li {
   padding-left: 20px;
 }
-.share ul li a{
-    transition: 300ms all;
-    color: green;
+.share ul li a {
+  transition: 300ms all;
+  color: green;
 }
 .share-title {
   display: flex;
