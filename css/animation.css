@@ -1,0 +1,48 @@
+/*Animassyon*/
+.left-animation {
+  animation: maveInLeft 1500ms; }
+
+.right-animation {
+  animation: maveInRight 1500ms; }
+
+.top-animation {
+  animation: maveInTop 1500ms; }
+
+.bottom-animation {
+  animation: maveInBottom 1200ms; }
+
+@keyframes maveInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0; }
+  75% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes maveInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0; }
+  75% {
+    transform: translateX(-20px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes maveInTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0; }
+  75% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes maveInBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0; }
+  75% {
+    transform: translateY(-20px); }
+  100% {
+    transform: translateY(0px); } }

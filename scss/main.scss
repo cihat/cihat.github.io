@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Open+Sans:wght@400;700&family=Oxygen:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #121314;
+  display: block;
+  padding: 5vh 10vw;
+  -webkit-font-smoothing: antialiased;
+  font-size: calc(10px + 0.33vw);
+  margin: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  h1 {
+    font-size: 4.5em;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  p {
+    display: block;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 28em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    p#name_paragraph {
+      font-weight: 500;
+      font-size: 2.2em;
+      line-height: 1.4;
+      max-width: 28em;
+    }
+
+    a {
+      text-decoration: none;
+      color: #121314;
+      position: relative;
+
+      // &:-webkit-any-link {
+      //   color: -webkit-link;
+      //   cursor: pointer;
+      //   text-decoration: underline;
+      // }
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        background-color: rgba(79, 192, 141, 0.5);
+      }
+    }
+  }
+
+  .contact {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.6em;
+      max-width: 28em;
+      color: #000;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+
+      li {
+        margin-right: 1em;
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1rem;
+    align-items: center;
+    align-content: flex-start;
+    li {
+      margin: auto;
+    }
+  }
+}
