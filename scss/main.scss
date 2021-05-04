@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Open+Sans:wght@400;700&family=Oxygen:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Oxygen:wght@400;500;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 html {
   line-height: 1.15;
@@ -28,6 +28,13 @@ body {
     margin-bottom: 0;
   }
 
+  p#name_paragraph {
+    font-weight: 500 !important;
+    font-size: 2.2em;
+    line-height: 1.4;
+    max-width: 28em;
+  }
+
   p {
     display: block;
     font-size: 1.6em;
@@ -39,24 +46,18 @@ body {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 
-    p#name_paragraph {
+    b {
       font-weight: 500;
-      font-size: 2.2em;
-      line-height: 1.4;
-      max-width: 28em;
     }
+
 
     a {
       text-decoration: none;
       color: #121314;
       position: relative;
+      cursor: pointer;
 
-      // &:-webkit-any-link {
-      //   color: -webkit-link;
-      //   cursor: pointer;
-      //   text-decoration: underline;
-      // }
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         z-index: -1;

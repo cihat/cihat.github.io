@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Open+Sans:wght@400;700&family=Oxygen:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Oxygen:wght@400;500;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -21,6 +21,11 @@ body {
     font-size: 4.5em;
     font-weight: 500;
     margin-bottom: 0; }
+  .container p#name_paragraph {
+    font-weight: 500 !important;
+    font-size: 2.2em;
+    line-height: 1.4;
+    max-width: 28em; }
   .container p {
     display: block;
     font-size: 1.6em;
@@ -31,16 +36,14 @@ body {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px; }
-    .container p p#name_paragraph {
-      font-weight: 500;
-      font-size: 2.2em;
-      line-height: 1.4;
-      max-width: 28em; }
+    .container p b {
+      font-weight: 500; }
     .container p a {
       text-decoration: none;
       color: #121314;
-      position: relative; }
-      .container p a:after {
+      position: relative;
+      cursor: pointer; }
+      .container p a::after {
         content: "";
         position: absolute;
         z-index: -1;
