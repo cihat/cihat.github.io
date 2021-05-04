@@ -1,4 +1,4 @@
 # blog
 
 Link to the site;
-[Website](https://cihatdev.github.io/)
+# [Live](https://cihat.github.io/)
