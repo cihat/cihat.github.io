@@ -72,10 +72,8 @@ body {
 @media screen and (max-width: 600px) {
   .contact ul {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: flex-start;
     margin-left: 1rem;
-    align-items: center;
-    align-content: flex-start; }
-    .contact ul li {
-      margin: auto; } }
+    align-items: fle; } }
